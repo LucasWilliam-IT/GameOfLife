@@ -2,6 +2,12 @@
 #include<vector>
 
 using namespace std;
+void displayBoard(const vector<vector<int>>& board, int rows, int cols);
+int countNeighbor(vector<vector<int>> board, int row, int col, int rows, int cols);
+void updateBoard(vector<vector<int>> board, int rows, int cols);
+bool boardsAreEqual(const vector<vector<int>>& board1, const vector<vector<int>>& board2, int rows, int cols);
+bool allCellsAreDead(const vector<vector<int>>& board, int rows, int cols);
+int countAliveCells(const vector<vector<int>>& board, int rows, int cols);
 //function to check and count alive neighbor cells
 int countNeighbor(vector<vector<int>> board, int row, int col, int rows, int cols) {
 	int aliveNeighbors = 0;
